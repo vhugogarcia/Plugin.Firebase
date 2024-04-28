@@ -1,8 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFrameworks>net6.0;net6.0-android;net6.0-ios</TargetFrameworks>
-        <UseMauiEssentials>true</UseMauiEssentials>
+        <TargetFrameworks>net8.0;net8.0-android;net8.0-ios</TargetFrameworks>
         <SingleProject>true</SingleProject>
         <ImplicitUsings>enable</ImplicitUsings>
 
@@ -21,7 +20,7 @@
 
         <!--Assembly and Namespace info -->
         <PackageId>Plugin.Firebase.Auth.Facebook</PackageId>
-        <PackageVersion>2.0.1</PackageVersion>
+        <PackageVersion>2.1.0</PackageVersion>
 
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <PackageProjectUrl>https://github.com/TobiasBuchholz/Plugin.Firebase</PackageProjectUrl>
@@ -36,7 +35,7 @@
 
         <Owners>Tobias Buchholz</Owners>
         <Authors>Tobias Buchholz</Authors>
-        <Copyright>Copyright 2023</Copyright>
+        <Copyright>Copyright 2024</Copyright>
 
         <!--Version of C# to use -->
         <LangVersion>default</LangVersion>
@@ -60,16 +59,16 @@
         <None Remove=".vs\**" />
         <None Remove=".idea\**" />
         <None Include="..\..\art\icon.png" Pack="true" PackagePath="" />
-        <None Include="..\..\docs\auth_facebook.md" Pack="true" PackagePath="\"/>
+        <None Include="..\..\docs\auth_facebook.md" Pack="true" PackagePath="\" />
 
         <Compile Include="Shared\**\*.cs" />
     </ItemGroup>
 
-    <ItemGroup Condition="'$(TargetFramework)' == 'net6.0-android'">
+    <ItemGroup Condition="'$(TargetFramework)' == 'net8.0-android'">
         <Compile Include="Platforms\Android\**\*.cs" />
     </ItemGroup>
 
-    <ItemGroup Condition="'$(TargetFramework)' == 'net6.0-ios'">
+    <ItemGroup Condition="'$(TargetFramework)' == 'net8.0-ios'">
         <Compile Include="Platforms\iOS\**\*.cs" />
     </ItemGroup>
     
@@ -80,12 +79,16 @@
     </ItemGroup>
 
     <!-- nuget packages -->
-    <ItemGroup Condition="'$(TargetFramework)' == 'net6.0-android'">
+    <ItemGroup Condition="'$(TargetFramework)' == 'net8.0-android'">
         <PackageReference Include="Xamarin.Facebook.Android" Version="11.2.0.1" />
     </ItemGroup>
 
-    <ItemGroup Condition="'$(TargetFramework)' == 'net6.0-ios'">
+    <ItemGroup Condition="'$(TargetFramework)' == 'net8.0-ios'">
         <PackageReference Include="Xamarin.Facebook.iOS" Version="12.2.0.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.Maui.Essentials" Version="8.0.20" />
     </ItemGroup>
 
 </Project>

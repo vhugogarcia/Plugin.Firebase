@@ -31,6 +31,8 @@ Since code should be documenting itself you can also take a look at the followin
 - [tests/.../AnalyticsFixture.cs](https://github.com/TobiasBuchholz/Plugin.Firebase/blob/master/tests/Plugin.Firebase.IntegrationTests/Analytics/AnalyticsFixture.cs)
 
 ## Release notes
+- Version 2.1.0
+  - Update AdamE.Firebase.iOS.Analytics to target Firebase SDK 10.18.0
 - Version 2.0.2
   - Update Xamarin.Firebase.Analytics to fix issue #172
 - Version 2.0.1
