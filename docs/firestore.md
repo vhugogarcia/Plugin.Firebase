@@ -80,6 +80,8 @@ Since code should be documenting itself you can also take a look at the followin
 - [tests/.../FirestoreFixture.cs](https://github.com/TobiasBuchholz/Plugin.Firebase/blob/master/tests/Plugin.Firebase.IntegrationTests/Firestore/FirestoreFixture.cs)
 
 ## Release notes
+- Version 2.1.0
+  - Update AdamE.Firebase.iOS.CloudFirestore to target Firebase SDK 10.22.0
 - Version 2.0.7
   - Fixed missing DateTime in firestore (PR #280)
   - Fix simple number arrays on firestore android (issue #276)

@@ -32,7 +32,7 @@ Since code should be documenting itself you can also take a look at the followin
 
 ## Release notes
 - Version 2.1.0
-  - Update AdamE.Firebase.iOS.Analytics to target Firebase SDK 10.18.0
+  - Update AdamE.Firebase.iOS.Analytics to target Firebase SDK 10.22.0
 - Version 2.0.2
   - Update Xamarin.Firebase.Analytics to fix issue #172
 - Version 2.0.1

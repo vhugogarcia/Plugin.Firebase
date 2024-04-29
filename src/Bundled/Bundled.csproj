@@ -30,7 +30,7 @@
         <PackageReadmeFile>README.md</PackageReadmeFile>
 
         <Title>Plugin.Firebase</Title>
-        <Summary>Xamarin wrapper around the native Android and iOS Firebase SDKs.</Summary>
+        <Summary>.NET MAUI wrapper around the native Android and iOS Firebase SDKs.</Summary>
         <Description>The plugin includes cross-platform APIs for Firebase Analytics, Auth, Cloud Messaging, Crashlytics, Dynamic Links, Firestore, Cloud Functions, Remote Config and Storage.</Description>
 
         <Owners>Tobias Buchholz</Owners>

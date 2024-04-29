@@ -84,6 +84,8 @@ Since code should be documenting itself you can also take a look at the followin
 - [sample/.../DynamicLinkService.cs](https://github.com/TobiasBuchholz/Plugin.Firebase/blob/master/sample/Playground/Common/Services/DynamicLink/DynamicLinkService.cs)
 
 ## Release notes
+- Version 2.1.0
+  - Update AdamE.Firebase.iOS.DynamicLinks to target Firebase SDK 10.22.0-alpha1
 - Version 2.0.1
   - Remove unnecessary UseMaui property from csproj files
   - Readd net6.0 tfm

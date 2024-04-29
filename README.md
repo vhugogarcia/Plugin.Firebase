@@ -1,6 +1,6 @@
 # Plugin.Firebase
 
-This is a wrapper library around the native Android and iOS Firebase Xamarin SDKs which includes cross-platform APIs for most of the Firebase features.
+This is a .NET MAUI wrapper library around the native Android and iOS Firebase SDKs which includes cross-platform APIs for most of the Firebase features.
 
 ## Supported features
 
@@ -27,16 +27,16 @@ This is a wrapper library around the native Android and iOS Firebase Xamarin SDK
 4. Set `[GoogleService-Info.plist|google-services.json]` **build action** behaviour to `[Bundle Resource|GoogleServicesJson]` by Right clicking/Build Action.
 
 ### .NET MAUI support
-The new plugin version 1.2.0 now supports .NET MAUI applications with .NET 6 🚀 
+The plugin version 2.1.0 now supports .NET MAUI applications with .NET 8 🚀 
 
 To get started add the `GoogleService-Info.plist` and the `google-services.json` files to the root folder of your project and include them in the .csproj file like this:
 
 ```xml
-<ItemGroup Condition="'$(TargetFramework)' == 'net6.0-android'">
+<ItemGroup Condition="'$(TargetFramework)' == 'net8.0-android'">
     <GoogleServicesJson Include="google-services.json" />
 </ItemGroup>
 
-<ItemGroup Condition="'$(TargetFramework)' == 'net6.0-ios'">
+<ItemGroup Condition="'$(TargetFramework)' == 'net8.0-ios'">
     <BundleResource Include="GoogleService-Info.plist" />
 </ItemGroup>
 ```
@@ -92,22 +92,22 @@ Ensure the `ApplicationId` in your `.csproj` file matches the `bundle_id` and `p
 The plugin doesn't support Windows or Mac catalyst, so either remove their targets from your `.csproj` file or use  [preprocessor directives](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/preprocessor-directives#conditional-compilation) and [MSBuild conditions](https://learn.microsoft.com/de-de/visualstudio/msbuild/msbuild-conditions?view=vs-2022), e.g:
 
 ```xml
-<ItemGroup Condition="'$(TargetFramework)' == 'net6.0-ios' OR '$(TargetFramework)' == 'net6.0-android'">
-    <PackageReference Include="Plugin.Firebase" Version="1.2.0" />
+<ItemGroup Condition="'$(TargetFramework)' == 'net8.0-ios' OR '$(TargetFramework)' == 'net6.0-android'">
+    <PackageReference Include="Plugin.Firebase" Version="2.1.0" />
 </ItemGroup>
 ```
 
 ### Android specifics
 - For package versions prior to `Plugin.Firebase 2.0.7`, `Plugin.Firebase.Auth 2.0.5`, `Plugin.Firebase.Firestore 2.0.5`, `Plugin.Firebase.Functions 2.0.2` or `Plugin.Firebase.Storage 2.0.2` add the following `ItemGroup` to your `.csproj` file to prevent build errors:
 ```xml
-<ItemGroup Condition="'$(TargetFramework)' == 'net6.0-android'">
+<ItemGroup Condition="'$(TargetFramework)' == 'net8.0-android'">
   <PackageReference Include="Xamarin.Kotlin.StdLib.Jdk7" Version="1.7.10" ExcludeAssets="build;buildTransitive" />
   <PackageReference Include="Xamarin.Kotlin.StdLib.Jdk8" Version="1.7.10" ExcludeAssets="build;buildTransitive" />
 </ItemGroup>
 ```
 - For later versions add the following `ItemGroup` to your `.csproj` file to prevent build errors:
 ```xml
-<ItemGroup Condition="'$(TargetFramework)' == 'net7.0-android'">
+<ItemGroup Condition="'$(TargetFramework)' == 'net8.0-android'">
     <PackageReference Include="Xamarin.AndroidX.Core" Version="1.12.0.2" />
     <PackageReference Include="Xamarin.AndroidX.Collection" Version="1.3.0.1" />
     <PackageReference Include="Xamarin.AndroidX.Collection.Ktx" Version="1.3.0.1" />
@@ -148,7 +148,7 @@ For example the [`Plugin.Firebase.IntegrationTests`](https://github.com/TobiasBu
 
 ## Troubleshooting
 #### Windows 11 long path issue
-Problems with the Xamarin.Firebase.iOS.Core package mean that installation can fail on Windows due to long paths See dotnet/maui#17828. To combat this, you need to enable long paths in the registry and move your local nuget cache. You should also keep the path to your project as short as possible.:
+Problems with the AdamE.Firebase.iOS.Core package mean that installation can fail on Windows due to long paths See dotnet/maui#17828. To combat this, you need to enable long paths in the registry and move your local nuget cache. You should also keep the path to your project as short as possible.:
 
 ##### Powershell
 
@@ -192,7 +192,7 @@ You are welcome to contribute to this project by creating a [Pull Request](https
 `Plugin.Firebase` is released under the MIT license. See the [LICENSE](https://github.com/TobiasBuchholz/Plugin.Firebase/blob/development/LICENSE) file for details.
 
 ## Release notes
-- Version 2.0.*
+- Version 2.x.x
   - see docs of separate nuget packages
 - Version 2.0.0
   - All features have been split into separate nuget packages 

@@ -30,7 +30,7 @@
         <PackageReadmeFile>functions.md</PackageReadmeFile>
 
         <Title>Plugin.Firebase</Title>
-        <Summary>Xamarin wrapper around the native Android and iOS Firebase SDKs.</Summary>
+        <Summary>.NET MAUI wrapper around the native Android and iOS Firebase SDKs.</Summary>
         <Description>The plugin includes cross-platform APIs for Firebase Functions.</Description>
 
         <Owners>Tobias Buchholz</Owners>
@@ -83,7 +83,7 @@
     </ItemGroup>
 
     <ItemGroup Condition="'$(TargetFramework)' == 'net8.0-ios'">
-        <PackageReference Include="AdamE.Firebase.iOS.CloudFunctions" Version="10.21.0" />
+        <PackageReference Include="AdamE.Firebase.iOS.CloudFunctions" Version="10.22.0" />
     </ItemGroup>
     
 </Project>

@@ -42,6 +42,8 @@ Since code should be documenting itself you can also take a look at the followin
 - [src/.../IFirebaseCrashlytics.cs](https://github.com/TobiasBuchholz/Plugin.Firebase/blob/master/src/Shared/Crashlytics/IFirebaseCrashlytics.cs)
 
 ## Release notes
+- Version 2.1.0
+  - Update AdamE.Firebase.iOS.Crashlytics to target Firebase SDK 10.22.0
 - Version 2.0.3
   - Fix StackTraceParser for Crashlytics (PR #255)
 - Version 2.0.2

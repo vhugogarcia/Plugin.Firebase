@@ -22,6 +22,8 @@ Since code should be documenting itself you can also take a look at the followin
 - [tests/.../RemoteConfigFixture.cs](https://github.com/TobiasBuchholz/Plugin.Firebase/blob/master/tests/Plugin.Firebase.IntegrationTests/RemoteConfig/RemoteConfigFixture.cs)
 
 ## Release notes
+- Version 2.1.0
+  - Update AdamE.Firebase.iOS.RemoteConfig to target Firebase SDK 10.22.0-alpha1
 - Version 2.0.1
   - Remove unnecessary UseMaui property from csproj files
   - Readd net6.0 tfm

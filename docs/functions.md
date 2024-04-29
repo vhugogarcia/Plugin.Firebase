@@ -25,6 +25,8 @@ Since code should be documenting itself you can also take a look at the followin
 - [tests/cloud-functions/.../index.ts](https://github.com/TobiasBuchholz/Plugin.Firebase/blob/master/tests/cloud-functions/functions/src/index.ts)
 
 ## Release notes
+- Version 2.1.0
+  - Update AdamE.Firebase.iOS.Functions to target Firebase SDK 10.22.0
 - Version 2.0.2
   - Bumped up Xamarin.Firebase.Functions package to version 120.3.1.3
 - Version 2.0.1

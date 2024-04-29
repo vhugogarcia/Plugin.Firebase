@@ -26,6 +26,8 @@ Since code should be documenting itself you can also take a look at the followin
 - [tests/.../StorageFixture.cs](https://github.com/TobiasBuchholz/Plugin.Firebase/blob/master/tests/Plugin.Firebase.IntegrationTests/Firestore/StorageFixture.cs)
 
 ## Release notes
+- Version 2.1.0
+  - Update AdamE.Firebase.iOS.Storage to target Firebase SDK 10.22.0
 - Version 2.0.3
   - Add missing GetBytes() method to IStorageReference (issue #279)
 - Version 2.0.2

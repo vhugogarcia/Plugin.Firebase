@@ -71,6 +71,8 @@ Since code should be documenting itself you can also take a look at the followin
 - [sample/.../AuthService.cs](https://github.com/TobiasBuchholz/Plugin.Firebase/blob/master/sample/Playground/Common/Services/Auth/AuthService.cs)
 
 ## Release notes
+- Version 2.1.0
+  - Update AdamE.Firebase.iOS.Auth to target Firebase SDK 10.22.0
 - Version 2.0.7
   - Added AddAuthStateListener to FirebaseAuth (PR #246)
 - Version 2.0.6
